@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="unselected">#7f8c8d</color>
+    <color name="selected">#e74c3c</color>
+    <color name="border">#bdc3c7</color>
+    
+    
+    <color name="blue">#22A7F0</color>
+    <color name="red">#F22613</color>
+    <color name="yellow">#F5D76E</color>
+    <color name="orange">#F27935</color>
+    
+</resources>

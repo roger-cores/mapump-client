@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vosaye.mapump.MainActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" 
+        android:layout_above="@+id/pumpsLayout">
+        
+        <com.vosaye.mapump.custom_views.CenterPointer 
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            />
+    </fragment>
+
+    <LinearLayout
+        android:id="@+id/pumpsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <ToggleButton
+            android:id="@+id/iocl"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_selector_iocl"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textOn="IOCL"
+            android:checked="true"
+            android:textOff="IOCL"
+            android:layout_margin="5dp"
+            android:onClick="onCompanyChange" />
+
+        <ToggleButton
+            android:id="@+id/bpcl"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_selector_bpcl"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textOn="BPCL"
+            android:checked="true"
+            android:textOff="BPCL"
+            android:layout_margin="5dp"
+            android:onClick="onCompanyChange"/>
+
+        <ToggleButton
+            android:id="@+id/rcl"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_selector_rcl"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textOn="RCL"
+            android:checked="true"
+            android:textOff="RCL"
+            android:layout_margin="5dp"
+            android:onClick="onCompanyChange"/>
+
+        <ToggleButton
+            android:id="@+id/hpcl"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background_selector_hpcl"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textOn="HPCL"
+            android:checked="true"
+            android:textOff="HPCL"
+            android:layout_margin="5dp"
+            android:onClick="onCompanyChange" />
+    </LinearLayout>
+
+</RelativeLayout>
